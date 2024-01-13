@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    function convert()
+    {
+        var kms = document.getElementById('data').value;
+        const factor = 0.621371
+        var miles = kms*factor;
+        // document.getElementById('result').innerText=`${miles} miles`
+        document.getElementById('result').innerText = miles + 'miles'
+    }
+    </script>
+</head>
+<body>
+    <input type="number" name="" number="" step="any" id="data">
+    kilometers to
+    <button onclick="convert()">convert</button> 
+    miles
+    <h1 class="" id="result"></h1>
+</body>
+</html>

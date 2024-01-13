@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   function checkNumber()
+   {
+    var d = document.getElementById('data').value
+    var n 
+    if(d>0){
+        n = "it is a positive number"
+    }
+    else if(d<0)
+    {
+        n = "it is negative number "
+    }
+    else {
+        n = "it is zero"
+    }
+    document.getElementById('result').innerText=n
+   }
+    </script>
+</head>
+<body>
+    <h1 class="">enter number to check it is positive , negative or zero</h1>
+    <input type="number" id="data">
+    <button class="" onclick="checkNumber()">check</button>
+    <h1 id="result"></h1>
+</body>
+</html>
